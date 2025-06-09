@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly_express as px
 
-car_data = pd.read_csv('../vehicles_us.csv')
+car_data = pd.read_csv('vehicles_us.csv')
 
 #El encabezado de la pagina
 st.header('Mi primer dashboard en Streamlit')
@@ -35,4 +35,3 @@ if hist_button: # al hacer clic en el botón
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
 
-    
